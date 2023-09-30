@@ -5,6 +5,7 @@ from functions import TeamCheck
 from discord.utils import get
 import config
 
+#【祝】共同開発者一名増員！！！
 
 TOKEN = config.VCTUDB_TOKEN
 
