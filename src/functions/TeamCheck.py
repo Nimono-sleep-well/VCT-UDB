@@ -11,6 +11,9 @@ navi = ["../resource/Image/tier1/navi_logo_left.png", "../resource/Image/tier1/n
 tl = ["../resource/Image/tier1/tl_logo_left.png", "../resource/Image/tier1/tl_logo_right.png", "Team Liquid"]
 nrg = ["../resource/Image/tier1/nrg_logo_left.png", "../resource/Image/tier1/nrg_logo_right.png", "NRG"]
 
+sz = ["../resource/Image/tier2/sz_logo_left.png", "../resource/Image/tier2/sz_logo_right.png", "SCARZ"]
+fl = ["../resource/Image/tier2/fl_logo_left.png", "../resource/Image/tier2/fl_logo_right.png", "FENNEL"]
+
 challengers = 0x0db397
 ascention = 0x0d9093
 GC = 0xe09600
