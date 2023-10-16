@@ -62,6 +62,10 @@ def TeamCheck(team1, team2):
         team1 = tl
     elif team1 == "nrg":
         team1 = nrg
+    elif team1 == "sz":
+        team1 = sz
+    elif team1 == "fl":
+        team1 = fl
         
     
     if team2 == "fnc":
@@ -88,6 +92,10 @@ def TeamCheck(team1, team2):
         team2 = tl
     elif team2 == "nrg":
         team2 = nrg
+    elif team2 == "sz":
+        team2 = sz
+    elif team2 == "fl":
+        team2 = fl
     
     return team1, team2
 
@@ -135,3 +143,9 @@ def ImgCheck(text):
         return img_back_masters
     elif text == "champions":
         return img_back_champions
+    
+def Channel(text):
+    if text == "announce":
+        return 0
+    else:
+        return 1

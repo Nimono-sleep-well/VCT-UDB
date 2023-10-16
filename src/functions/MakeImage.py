@@ -8,19 +8,6 @@ Date = str(date_now.strftime('%Y年%m月%d日 %H:%M:%S～'))
 out = "../out/match_Image.jpg"
 out_vote = "../out/vote_Image.jpg"
 
-fnc = ["../resource/Image/tier1/fnc_logo_left.png", "../resource/Image/tier1/fnc_logo_right.png", "Fnatic"]
-prx = ["../resource/Image/tier1/prx_logo_left.png", "../resource/Image/tier1/prx_logo_right.png", "Paper Rex"]
-zeta = ["../resource/Image/tier1/zeta_logo_left.png", "../resource/Image/tier1/zeta_logo_right.png", "ZETA DIVISION"]
-eg = ["../resource/Image/tier1/eg_logo_left.png", "../resource/Image/tier1/eg_logo_right.png", "Evil Geniuses"]
-drx = ["../resource/Image/tier1/drx_logo_left.png", "../resource/Image/tier1/drx_logo_right.png", "DRX"]
-loud = ["../resource/Image/tier1/loud_logo_left.png", "../resource/Image/tier1/loud_logo_right.png", "LOUD"]
-ht = ["../resource/Image/tier1/100t_logo_left.png", "../resource/Image/tier1/100t_logo_right.png", "100 Thieves"]
-c9 = ["../resource/Image/tier1/c9_logo_left.png", "../resource/Image/tier1/c9_logo_right.png", "Cloud9"]
-edg = ["../resource/Image/tier1/edg_logo_left.png", "../resource/Image/tier1/edg_logo_right.png", "Edward Gaming"]
-navi = ["../resource/Image/tier1/navi_logo_left.png", "../resource/Image/tier1/navi_logo_right.png", "Natus Vincere"]
-tl = ["../resource/Image/tier1/tl_logo_left.png", "../resource/Image/tier1/tl_logo_right.png", "Team Liquid"]
-nrg = ["../resource/Image/tier1/nrg_logo_left.png", "../resource/Image/tier1/nrg_logo_right.png", "NRG"]
-
 font_Valorant = ImageFont.truetype("../resource/font/Valorant Font.ttf", 90)
 font_Myrica = ImageFont.truetype("../resource/font/Myrica.TTC", 80)
 font_Myrica_Small = ImageFont.truetype("../resource/font/Myrica.TTC", 70)

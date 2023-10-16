@@ -1,7 +1,9 @@
 import discord
 from discord import app_commands
-from functions import MakeImage
-from functions import TeamCheck
+from functions import(
+    MakeImage,
+    TeamCheck
+    )
 from discord.utils import get
 import config
 
@@ -12,11 +14,12 @@ intents = discord.Intents.default()
 client = discord.Client(intents=intents)
 tree = app_commands.CommandTree(client)
 
+channel_announce = 1153604048264646728
+channel_rules = 1153599232301858837 #rules
 channel_vote = 1156883149880574083  #勝利予想チャンネル
 channel_test = 1126294770210312255  #自鯖チャンネル
 channnel_bot = 1153702899390623871  #bot実験場
-channel_team1 = 1157193592226463846 #チーム１VC
-channel_team2 = 1157193592226463846 #チーム２VC
+channel_yosou = 1159847883642785952 #チーム１VC
 
 one_emoji = "1️⃣"
 two_emoji = "2️⃣"
@@ -30,21 +33,21 @@ async def on_ready():
     await tree.sync()
     
 async def on_raw_reaction_add(payload):
-    
-    channel = client.get_channel(payload.channel_id)
-    message = await channel.fetch_message(payload.message_id)
-    reaction = get(message.reactions, emoji=payload.emoji.name)
-    
-    if channel == channel_vote:
-        if payload.emoji_name == one_emoji:
-            team1_num = reaction.count - 1
-            team1_name = "チーム１投票数：" + str(team1_num)
-        elif payload.emoji_name == two_emoji:
-            team2_num = reaction.count - 1
-            team2_name = "チーム２投票数：" + str(team2_num)
-        
-        await channel_team1.edit(name=team1_name)
-        await channel_team2.edit(name=team2_name)
+# リアクションされたメッセージのチャンネル
+    txt_channel = client.get_channel(payload.channel_id)
+# リアクションされたメッセージ
+    message = await txt_channel.fetch_message(payload.message_id)
+# リアクションしたユーザ
+    user = payload.member
+# 自分自身に対するリアクションは通知しない
+    if (message.author == user):
+        return
+    msg = f"{message.author.mention} {payload.emoji}\nFrom:{user.display_name} \
+          \nMessage:{message.content}\n{message.jump_url}"
+# Bot 専用のチャンネルIDに置き換えて下さい
+    CHANNEL_ID = channel_yosou
+    channel = client.get_channel(CHANNEL_ID)
+    await channel.send(msg)
         
 @tree.command(name="add-match", description="Make Image of match(Admin only)")
 @app_commands.rename(title="大会名", team1="チーム1", team2="チーム2")
