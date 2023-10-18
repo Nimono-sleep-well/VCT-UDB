@@ -10,6 +10,10 @@ edg = ["../resource/Image/tier1/edg_logo_left.png", "../resource/Image/tier1/edg
 navi = ["../resource/Image/tier1/navi_logo_left.png", "../resource/Image/tier1/navi_logo_right.png", "Natus Vincere"]
 tl = ["../resource/Image/tier1/tl_logo_left.png", "../resource/Image/tier1/tl_logo_right.png", "Team Liquid"]
 nrg = ["../resource/Image/tier1/nrg_logo_left.png", "../resource/Image/tier1/nrg_logo_right.png", "NRG"]
+dfm = []
+bld = []
+gen = []
+t1 = []
 
 sz = ["../resource/Image/tier2/sz_logo_left.png", "../resource/Image/tier2/sz_logo_right.png", "SCARZ"]
 fl = ["../resource/Image/tier2/fl_logo_left.png", "../resource/Image/tier2/fl_logo_right.png", "FENNEL"]
@@ -66,6 +70,14 @@ def TeamCheck(team1, team2):
         team1 = sz
     elif team1 == "fl":
         team1 = fl
+    elif team1 == "dfm":
+        team1 = dfm
+    elif team1 == "bld":
+        team1 = bld
+    elif team1 == "gen":
+        team1 = gen
+    elif team1 == "t1":
+        team1 = t1
         
     
     if team2 == "fnc":
@@ -96,6 +108,14 @@ def TeamCheck(team1, team2):
         team2 = sz
     elif team2 == "fl":
         team2 = fl
+    elif team2 == "dfm":
+        team2 = dfm
+    elif team2 == "bld":
+        team2 = bld
+    elif team2 == "dfm":
+        team2 = dfm
+    elif team2 == "t1":
+        team2 = t1
     
     return team1, team2
 
