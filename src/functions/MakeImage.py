@@ -11,6 +11,7 @@ out_vote = "../out/vote_Image.jpg"
 font_Valorant = ImageFont.truetype("../resource/font/Valorant Font.ttf", 90)
 font_Myrica = ImageFont.truetype("../resource/font/Myrica.TTC", 80)
 font_Myrica_Small = ImageFont.truetype("../resource/font/Myrica.TTC", 70)
+font_Valorant_mini = ImageFont.truetype("../resource/font/Valorant Font.ttf", 70)
 
 def MkImage(NameEvent, month, day, hour, minutes, T1, T2):
     
@@ -35,8 +36,14 @@ def MkImage(NameEvent, month, day, hour, minutes, T1, T2):
     
     draw.text((960, 150), NameEvent, "#ffffff", font=font_Myrica, anchor='md')
     draw.text((960, 300), Date, "#ffffff", font=font_Myrica, anchor='md')
-    draw.text((480, 950), team1[2], "#ffffff", font=font_Valorant, anchor='md')
-    draw.text((1440, 950), team2[2], "#ffffff", font=font_Valorant, anchor='md')
+    if T1 == "dfm":
+        draw.text((480, 950), team1[2], "#ffffff", font=font_Valorant_mini, anchor='md')
+    else:
+        draw.text((480, 950), team1[2], "#ffffff", font=font_Valorant, anchor='md')
+    if T2 == "dfm":
+        draw.text((1440, 950), team2[2], "#ffffff", font=font_Valorant_mini, anchor='md')
+    else:
+        draw.text((1440, 950), team2[2], "#ffffff", font=font_Valorant, anchor='md')
     
     
     

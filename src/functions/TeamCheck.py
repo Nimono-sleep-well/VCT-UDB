@@ -10,10 +10,10 @@ edg = ["../resource/Image/tier1/edg_logo_left.png", "../resource/Image/tier1/edg
 navi = ["../resource/Image/tier1/navi_logo_left.png", "../resource/Image/tier1/navi_logo_right.png", "Natus Vincere"]
 tl = ["../resource/Image/tier1/tl_logo_left.png", "../resource/Image/tier1/tl_logo_right.png", "Team Liquid"]
 nrg = ["../resource/Image/tier1/nrg_logo_left.png", "../resource/Image/tier1/nrg_logo_right.png", "NRG"]
-dfm = []
-bld = []
-gen = []
-t1 = []
+dfm = ["../resource/Image/tier1/dfm_logo_left.png", "../resource/Image/tier1/dfm_logo_right.png", "DetonatioN FocusMe"]
+bld = ["../resource/Image/tier1/bld_logo_left.png", "../resource/Image/tier1/bld_logo_right.png", "Bleed Esports"]
+gen = ["../resource/Image/tier1/gen_logo_left.png", "../resource/Image/tier1/gen_logo_right.png", "Gen.G"]
+t1 = ["../resource/Image/tier1/t1_logo_left.png", "../resource/Image/tier1/t1_logo_right.png", "T1"]
 
 sz = ["../resource/Image/tier2/sz_logo_left.png", "../resource/Image/tier2/sz_logo_right.png", "SCARZ"]
 fl = ["../resource/Image/tier2/fl_logo_left.png", "../resource/Image/tier2/fl_logo_right.png", "FENNEL"]
@@ -112,8 +112,8 @@ def TeamCheck(team1, team2):
         team2 = dfm
     elif team2 == "bld":
         team2 = bld
-    elif team2 == "dfm":
-        team2 = dfm
+    elif team2 == "gen":
+        team2 = gen
     elif team2 == "t1":
         team2 = t1
     
