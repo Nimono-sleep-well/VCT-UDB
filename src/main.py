@@ -6,6 +6,8 @@ from functions import(
     )
 from discord.utils import get
 import config
+from motor import motor_asyncio as motor
+import json
 
 
 TOKEN = config.VCTUDB_TOKEN
@@ -13,6 +15,8 @@ TOKEN = config.VCTUDB_TOKEN
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
 tree = app_commands.CommandTree(client)
+
+file_roaster = "../resource/text/team_roaster/Roaster.json"
 
 channel_announce = 1153604048264646728
 channel_rules = 1153599232301858837 #rules
@@ -48,6 +52,8 @@ async def on_raw_reaction_add(payload):
     CHANNEL_ID = channel_yosou
     channel = client.get_channel(CHANNEL_ID)
     await channel.send(msg)
+    
+    
         
 @tree.command(name="add-match", description="Make Image of match(Admin only)")
 @app_commands.rename(title="大会名", team1="チーム1", team2="チーム2")
@@ -60,8 +66,10 @@ async def addMatch_command(interaction: discord.Interaction, title: str, month: 
     embed=discord.Embed(title="Image", color=0xff0000)
     embed.set_image(url="attachment://match_Image.jpg")
     
-    await interaction.channel.send(file=file, embed=embed)
+    await interaction.channel.send(file=file)
     #await interaction.response.send_message(file="../out/match_Image.jpg")
+    
+    
     
 @tree.command(name="vote_img", description="勝利するチームを予想しよう！")
 
@@ -77,9 +85,26 @@ async def vote_command(interaction: discord.Interaction, color: str, metatitle: 
     embed = discord.Embed(title= Event_title, description=str(metatitle) + "の勝利チームを予想しよう！", color=Color)
     embed.add_field(name="投票方法", value=str(T1[2]) + "は :one: \n" + str(T2[2] + "は :two: \nのリアクションで投票！"))
     embed.set_image(url="attachment://vote_Image.jpg")
-    
+
     msg = await channel.send(file=file, embed=embed)
     await msg.add_reaction(one_emoji)
     await msg.add_reaction(two_emoji)
+    
+@tree.command(name="roaster", description="ロスター表示")
+
+async def roaster_command(interaction: discord.Interaction, team: str):
+    with open(file_roaster) as f:
+        roaster = json.load(f)
+        
+        info = roaster[team]
+        
+        player = "\n".join(info["player"])
+        coach = "\n".join(info["coach"])
+        analyst = "\n".join(info["analyst"])
+        embed = discord.Embed(title = "ロスター情報", description = roaster[2] + "のロスター情報です")
+        embed.add_field(name="Player:", value=player)
+        embed.add_field(name="Coach:", value=coach)
+        embed.add_field(name="Analyst:", value=analyst)
+    await interaction.channel.send(embed=embed)
     
 client.run(TOKEN)

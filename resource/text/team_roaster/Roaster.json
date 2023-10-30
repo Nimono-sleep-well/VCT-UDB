@@ -1,0 +1,98 @@
+{
+    "total":19,
+    "bld":{
+        "player":["sScary", "Crazyguy", "yay", "Egoist", "Deryemon"],
+        "coach":["LEGIJA", "s3rius"],
+        "analyst":["Ominous"]
+    },
+    "c9":{
+        "player":["jakee", "wippie", "OXY", "Xeppaa", "vanity"],
+        "coach":["Immi"],
+        "analyst":[]
+    },
+    "cgz":{
+        "player":["sakurai", "Brofeld", "Moothie", "HYUMIN", "Art"],
+        "coach":["NeruFi"],
+        "analyst":[]
+    },
+    "dfm":{
+        "player":["Suggest", "Anthem", "takej"],
+        "coach":["Melofovia", "XrayN"],
+        "analyst":["Erii"]
+    },
+    "drx":{
+        "player":["stax", "Zest", "Rb", "Mako", "BuZz", "Foxy9", "Flashback"],
+        "coach":["Argency", "glow", "termi", "Anaks"],
+        "analyst":[]
+    },
+    "edg":{
+        "player":["Haodong", "CHICHOO", "nobody", "ZmjjKK", "Smoggy"],
+        "coach":["AfteR"],
+        "analyst":[]
+    },
+    "eg":{
+        "player":["Boostio", "C0M", "jawgemo", "Ethan", "Demon1", "BcJ", "Apotheon", "ScrewFace", "icy"],
+        "coach":["Potter", "Zikz"],
+        "analyst":[]
+    },
+    "fl":{
+        "player":["clz", "GON", "Derialy", "Xdll", "SyouTa", "RIA"],
+        "coach":["Johnta", "Euler"],
+        "analyst":["meltdown", "kir1n"]
+    },
+    "fnc":{
+        "player":["Boaster", "Derke", "Alfajer", "Leo", "Chronicle", "kamyk"],
+        "coach":["slk", "CoJo"],
+        "analyst":[]
+    },
+    "gen":{
+        "player":["t3xture", "Meteor", "Lakia"],
+        "coach":["Elmapudd", "HSK"],
+        "analyst":["Blank"]
+    },
+    "ht":{
+        "player":["Asuna", "bang", "Cryicells", "thwifo", "Mikes"],
+        "coach":["Zikz"],
+        "analyst":[]
+    },
+    "loud":{
+        "player":["Less", "Saadhak", "cauanzin", "tuyz"],
+        "coach":["fRoD", "stkJ"],
+        "analyst":["Markin"]
+    },
+    "navi":{
+        "player":["ANGE1", "Shao", "SUYGETSU", "Zyppan", "ardiis"],
+        "coach":["LATEKS", "d00mbr0s"],
+        "analyst":[]
+    },
+    "nrg":{
+        "player":["Victor", "crashies", "ethos"],
+        "coach":["Chet", "trainer"],
+        "analyst":["DeMarsDeRover"]
+    },
+    "prx":{
+        "player":["Jinggg", "mindfreak", "f0rsakeN", "d4v41", "something", "Monyet"],
+        "coach":["Alecks"],
+        "analyst":[]
+    },
+    "sg":{
+        "player":["NOBITA", "Misaya", "Gwangboong", "JinboongE", "gatorada"],
+        "coach":["Relife", "Senpai"],
+        "analyst":[]
+    },
+    "sz":{
+        "player":["Lumo", "MrTenzouEz", "Tempura", "Allen", "Yoshii"],
+        "coach":["noppo", "Fadezis", "Bulloco"],
+        "analyst":["moss"]
+    },
+    "t1":{
+        "player":["Carpe", "Sayaplayer", "iZu", "k1Ng", "xccurate", "xeta"],
+        "coach":["Stunner", "Autumn", "CheongGak"],
+        "analyst":[]
+    },
+    "zeta":{
+        "player":["Laz", "Dep", "SugarZ3ro"],
+        "coach":["JUNiOR", "crow"],
+        "analyst":["gya9"]
+    }
+}

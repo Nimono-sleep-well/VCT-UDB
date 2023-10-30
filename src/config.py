@@ -1,7 +1,9 @@
 from dotenv import load_dotenv
+
 load_dotenv()
 
 import os
+
 VCTUDB_TOKEN = os.getenv("BOT_TOKEN")
 CHANNEL_VOTE = os.getenv("CHANNEL_VOTE")
 CHANNEL_TEST = os.getenv("CHANNEL_TEST")
