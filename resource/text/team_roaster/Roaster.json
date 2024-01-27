@@ -1,5 +1,11 @@
 {
     "total":19,
+    "last_change":"2023/12/26",
+    "100t":{
+        "player":["Asuna", "bang", "Cryocells", "thwifo"],
+        "coach":["Zikz", "Mikes"],
+        "analyst":[]
+    },
     "bld":{
         "player":["sScary", "Crazyguy", "yay", "Egoist", "Deryemon"],
         "coach":["LEGIJA", "s3rius"],
@@ -16,7 +22,7 @@
         "analyst":[]
     },
     "dfm":{
-        "player":["Suggest", "Anthem", "takej"],
+        "player":["Suggest", "neth", "Meiy", "popogachi", "JoXJo", "Anthem"],
         "coach":["Melofovia", "XrayN"],
         "analyst":["Erii"]
     },
@@ -31,7 +37,7 @@
         "analyst":[]
     },
     "eg":{
-        "player":["Boostio", "C0M", "jawgemo", "Ethan", "Demon1", "BcJ", "Apotheon", "ScrewFace", "icy"],
+        "player":["Boostio", "C0M", "jawgemo", "Apotheon", "ScrewFace", "icy"],
         "coach":["Potter", "Zikz"],
         "analyst":[]
     },
@@ -42,21 +48,16 @@
     },
     "fnc":{
         "player":["Boaster", "Derke", "Alfajer", "Leo", "Chronicle", "kamyk"],
-        "coach":["slk", "CoJo"],
+        "coach":["mini", "slk", "CoJo"],
         "analyst":[]
     },
     "gen":{
-        "player":["t3xture", "Meteor", "Lakia"],
+        "player":["t3xture", "Meteor", "Lakia", "Munchkin", "Karon"],
         "coach":["Elmapudd", "HSK"],
         "analyst":["Blank"]
     },
-    "100t":{
-        "player":["Asuna", "bang", "Cryicells", "thwifo", "Mikes"],
-        "coach":["Zikz"],
-        "analyst":[]
-    },
     "loud":{
-        "player":["Less", "Saadhak", "cauanzin", "tuyz"],
+        "player":["qck", "Less", "Saadhak", "cauanzin", "tuyz"],
         "coach":["fRoD", "stkJ"],
         "analyst":["Markin"]
     },
@@ -66,7 +67,7 @@
         "analyst":[]
     },
     "nrg":{
-        "player":["Victor", "crashies", "ethos"],
+        "player":["Demon1", "Ethan", "Victor", "crashies", "Marved", "ethos"],
         "coach":["Chet", "trainer"],
         "analyst":["DeMarsDeRover"]
     },
@@ -86,13 +87,18 @@
         "analyst":["moss"]
     },
     "t1":{
-        "player":["Carpe", "Sayaplayer", "iZu", "k1Ng", "xccurate", "xeta"],
+        "player":["Carpe", "Sayaplayer", "iZu", "Rossy", "xccurate", "xeta"],
         "coach":["Stunner", "Autumn", "CheongGak"],
         "analyst":[]
     },
+    "tl":{
+        "player":["nAts", "Jamppi", "Keiko", "Mistic", "Enzo"],
+        "coach":["eMIL", "7Teen"],
+        "analyst":["Bacon9", "cauzed"]
+    },
     "zeta":{
-        "player":["Laz", "Dep", "SugarZ3ro"],
-        "coach":["JUNiOR", "crow"],
-        "analyst":["gya9"]
+        "player":["Laz", "Dep", "SugarZ3ro", "hiroronn", "Yuran"],
+        "coach":["JUNiOR", "crow", "Carlao"],
+        "analyst":["gya9", "nokaze37", "sieg"]
     }
 }

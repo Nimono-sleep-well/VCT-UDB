@@ -1,10 +1,10 @@
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageDraw, ImageFont
 import datetime
 from functions import TeamCheck
 
 EventName = "Champions LA"
 date_now = datetime.datetime.now()
-Date = str(date_now.strftime('%Y年%m月%d日 %H:%M:%S～'))
+Date = str(date_now.strftime('%Y/%m/%d'))
 out = "../out/match_Image.jpg"
 out_vote = "../out/vote_Image.jpg"
 

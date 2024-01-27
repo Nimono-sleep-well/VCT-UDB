@@ -7,7 +7,7 @@ loud = ["../resource/Image/tier1/loud_logo_left.png", "../resource/Image/tier1/l
 ht = ["../resource/Image/tier1/100t_logo_left.png", "../resource/Image/tier1/100t_logo_right.png", "100 Thieves", 0xeb2c2d]
 c9 = ["../resource/Image/tier1/c9_logo_left.png", "../resource/Image/tier1/c9_logo_right.png", "Cloud9", 0x00b0f0]
 edg = ["../resource/Image/tier1/edg_logo_left.png", "../resource/Image/tier1/edg_logo_right.png", "Edward Gaming", 0x221814]
-navi = ["../resource/Image/tier1/navi_logo_left.png", "../resource/Image/tier1/navi_logo_right.png", "Natus Vincere", 0x221814]
+navi = ["../resource/Image/tier1/navi_logo_left.png", "../resource/Image/tier1/navi_logo_right.png", "Natus Vincere", 0xffee00]
 tl = ["../resource/Image/tier1/tl_logo_left.png", "../resource/Image/tier1/tl_logo_right.png", "Team Liquid", 0x011538]
 nrg = ["../resource/Image/tier1/nrg_logo_left.png", "../resource/Image/tier1/nrg_logo_right.png", "NRG", 0x000000]
 dfm = ["../resource/Image/tier1/dfm_logo_left.png", "../resource/Image/tier1/dfm_logo_right.png", "DetonatioN FocusMe", 0x3866f5]
@@ -22,6 +22,8 @@ jdt = ["../resource/Image/tier2/jdt_logo_left.png", "../resource/Image/tier2/jdt
 nth = ["../resource/Image/tier2/nth_logo_left.png", "../resource/Image/tier2/nth_logo_right.png", "NORTHEPTION", 0xffcc33]
 sg = ["../resource/Image/tier2/sg_logo_left.png", "../resource/Image/tier2/sg_logo_right.png", "Sengoku Gaming", 0xc4031d]
 
+another = "../resource/Image/vct_logo.png"
+
 
 file_roaster = "../resource/text/team_roaster/roaster.json"
 
@@ -35,6 +37,7 @@ pacific = 0x01d2d7
 china = 0xebcd43
 masters = 0x6f4acc
 champions = 0xc5b174
+riotgamesone = 0x14fe64
 
 img_back_ascention = '../resource/Image/Vote_back_ascention.jpg'
 img_back_challengers = '../resource/Image/Vote_back_challengers.jpg'
@@ -93,6 +96,8 @@ def TeamCheck(team1, team2):
         team1 = nth
     elif team1 == "sg":
         team1 = sg
+    else:
+        team1 = [another, another, team1, 0x000000]
         
     
     if team2 == "fnc":
@@ -139,6 +144,8 @@ def TeamCheck(team1, team2):
         team2 = nth
     elif team2 == "sg":
         team2 = sg
+    else:
+        team2 = [another, another, team2, 0x000000]
     
     return team1, team2
 
@@ -187,6 +194,8 @@ def RoasterCheck(team1):
         team1 = nth
     elif team1 == "sg":
         team1 = sg
+    else:
+        team1 = [another, another, team1, 0x000000]
     return team1
 
 def color(text):
@@ -233,6 +242,8 @@ def ImgCheck(text):
         return img_back_masters
     elif text == "champions":
         return img_back_champions
+    elif text == "riotgamesone":
+        return img_back_americas
     
 def Channel(text):
     if text == "announce":
