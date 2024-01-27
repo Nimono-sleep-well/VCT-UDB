@@ -2,7 +2,7 @@
     "total":19,
     "last_change":"2023/12/26",
     "100t":{
-        "player":["Asuna", "bang", "Cryocells", "thwifo"],
+        "player":["Asuna", "bang", "Cryocells", "eeiu", "Boostio"],
         "coach":["Zikz", "Mikes"],
         "analyst":[]
     },
@@ -17,7 +17,7 @@
         "analyst":[]
     },
     "cgz":{
-        "player":["sakurai", "Brofeld", "Moothie", "HYUMIN", "Art"],
+        "player":["sakurai", "Brofeld", "Moothie", "HYUMIN", "Flax"],
         "coach":["NeruFi"],
         "analyst":[]
     },
@@ -27,7 +27,7 @@
         "analyst":["Erii"]
     },
     "drx":{
-        "player":["stax", "Zest", "Rb", "Mako", "BuZz", "Foxy9", "Flashback"],
+        "player":["stax", "Mako", "BuZz", "Foxy9", "Flashback"],
         "coach":["Argency", "glow", "termi", "Anaks"],
         "analyst":[]
     },
@@ -37,8 +37,8 @@
         "analyst":[]
     },
     "eg":{
-        "player":["Boostio", "C0M", "jawgemo", "Apotheon", "ScrewFace", "icy"],
-        "coach":["Potter", "Zikz"],
+        "player":["jawgemo", "Apotheon", "Derrek", "NaturE", "supamen"],
+        "coach":["Potter", "pho"],
         "analyst":[]
     },
     "fl":{
@@ -72,7 +72,7 @@
         "analyst":["DeMarsDeRover"]
     },
     "prx":{
-        "player":["Jinggg", "mindfreak", "f0rsakeN", "d4v41", "something", "Monyet"],
+        "player":["mindfreak", "f0rsakeN", "d4v41", "something", "Monyet", "Jinggg"],
         "coach":["Alecks"],
         "analyst":[]
     },
@@ -82,7 +82,7 @@
         "analyst":[]
     },
     "sz":{
-        "player":["Lumo", "MrTenzouEz", "Tempura", "Allen", "Yoshii"],
+        "player":["Lumo", "MrTenzouEz", "Allen", "Yoshii", "Only1", "Tempura"],
         "coach":["noppo", "Fadezis", "Bulloco"],
         "analyst":["moss"]
     },
